@@ -3,16 +3,17 @@ package ness.solo;
 import java.util.UUID;
 import java.util.concurrent.atomic.AtomicLong;
 
-import org.quartz.Job;
-import org.quartz.JobExecutionContext;
-import org.quartz.JobExecutionException;
-
 import com.google.common.collect.ImmutableMap;
 import com.google.inject.Inject;
+
 import com.nesscomputing.event.NessEvent;
 import com.nesscomputing.event.NessEventSender;
 import com.nesscomputing.event.NessEventType;
 import com.nesscomputing.logging.Log;
+
+import org.quartz.Job;
+import org.quartz.JobExecutionContext;
+import org.quartz.JobExecutionException;
 
 public class MessageTickerJob implements Job
 {
